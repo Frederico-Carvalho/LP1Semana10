@@ -33,8 +33,10 @@ namespace CharSets
             }
 
             var sortedCharacters = unionCharacters.OrderBy(c => c);
-            Console.WriteLine("Union of characters:");
-            Console.WriteLine(string.Join(", ", sortedCharacters));
+            foreach (var character in sortedCharacters)
+                {   
+                    Console.WriteLine(character);
+                }
         }
     }
 }
